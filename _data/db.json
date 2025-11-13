@@ -1,0 +1,50 @@
+{
+    "todos": [
+        {
+            "checked": true,
+            "title": "test",
+            "description": "this is a test todo",
+            "id": 1
+        },
+        {
+            "checked": false,
+            "title": "second todo",
+            "description": "this is the second todo",
+            "id": 2
+        },
+        {
+            "checked": false,
+            "title": "third todo",
+            "description": "this is the third todo",
+            "id": 3
+        },
+        {
+            "checked": false,
+            "title": "fourth todo",
+            "description": "this is the fourth todo",
+            "id": 4
+        }
+    ],
+    "projects": [
+        {
+            "name": "First Project",
+            "id": 1
+        },
+        {
+            "name": "Second Project",
+            "id": 2
+        }
+    ],
+    "products": [
+        {
+            "name": "Product A",
+            "price": 29.99,
+            "id": 1
+        },
+        {
+            "name": "Product B",
+            "price": 49.99,
+            "id": 2
+        }
+    ]
+}
