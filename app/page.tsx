@@ -1,6 +1,6 @@
 'use client'
 
-import OldFetch from "./(old)/page";
+import OldFetch from "./(query)/page";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 

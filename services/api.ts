@@ -16,3 +16,10 @@ export const getTodoIds = async () => {
         await axiosInstance.get<Todo[]>("/todos")
     ).data.map((todo) => todo.id);
 }
+
+// Return a todo 
+export const getTodo = async (id: number) => {
+  return (await axiosInstance.get<Todo>(`todos/${id}`)).data;
+}
+
+
