@@ -1,10 +1,10 @@
-import Todo from "@/components/Todo"
+import Todos from "@/components/Todo"
 
 const OldFetch = () => {
   return (
     <div>
         <h2>Todo List</h2>
-        <Todo />
+        <Todos />
     </div>
   )
 }

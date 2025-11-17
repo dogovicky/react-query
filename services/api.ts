@@ -23,3 +23,9 @@ export const getTodo = async (id: number) => {
 }
 
 
+
+//Mutations
+
+export const createTodo = async (data: Todo) => {
+  await axiosInstance.post('todos', data);
+}

@@ -1,9 +1,18 @@
+import { useCreateTodo } from '@/services/mutations';
 import { useTodos, useTodosIds } from '@/services/queries'
+import { Todo } from '@/types/todo';
 import { useIsFetching } from '@tanstack/react-query';
 
-const Todo = () => {
+const Todos = () => {
   const { isPending, isError, data, error, status, fetchStatus} = useTodosIds();
   const todoQueries = useTodos(data);
+
+
+  const createTodoMutation = useCreateTodo();
+
+  const handleCreateTodoSubmit = (data: Todo) => {
+    createTodoMutation.mutate(data);
+  }
 
   if(isPending) {
     return <span>Loading...</span>
@@ -37,8 +46,16 @@ const Todo = () => {
             </li>
           ))}
         </ul>
+
+        {/* useMutation concept: used for updating data on the backend */}
+        <form onSubmit={handleCreateTodoSubmit}>
+          <input type="text" placeholder='Title' value={} onChange={} /> <br />
+          <input type="text" value={} onChange={} /> <br />
+          <input type="text" value={} onChange={} /> <br />
+          <input type="submit" />
+        </form>
     </>
   )
 }
 
-export default Todo
+export default Todos
