@@ -1,5 +1,6 @@
 'use client'
 
+import Projects from "@/components/Projects";
 import OldFetch from "./(query)/page";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
