@@ -1,3 +1,4 @@
+import { Product } from "@/types/product";
 import { Project } from "@/types/project";
 import { Todo } from "@/types/todo";
 import axios from "axios";
@@ -44,4 +45,17 @@ export const deleteTodo = async (id: number) => {
 
 export const getProjects = async (page = 1) => {
   return (await axiosInstance.get<Project[]>(`projects?_page=${page}&_limit=3`)).data;
+}
+
+
+
+// Infinite scrolling
+
+export const getProducts = async ({ pageParam }: { pageParam: number }) => {
+  return (await axiosInstance.get<Product[]>(`products/_page=${pageParam + 1}&_limit=3`)).data;
+}
+
+
+export const getProduct = async (id: string) => {
+  return (await axiosInstance.get<Product>(`products/${id}`)).data;
 }

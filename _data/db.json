@@ -52,6 +52,36 @@
       "name": "Product B",
       "price": 49.99,
       "id": "2"
+    },
+    {
+      "name": "Product A",
+      "price": 29.99,
+      "id": "1"
+    },
+    {
+      "name": "Product B",
+      "price": 49.99,
+      "id": "2"
+    },
+    {
+      "name": "Product A",
+      "price": 29.99,
+      "id": "1"
+    },
+    {
+      "name": "Product B",
+      "price": 49.99,
+      "id": "2"
+    },
+    {
+      "name": "Product A",
+      "price": 29.99,
+      "id": "1"
+    },
+    {
+      "name": "Product B",
+      "price": 49.99,
+      "id": "2"
     }
   ]
 }
