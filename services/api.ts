@@ -29,3 +29,11 @@ export const getTodo = async (id: number) => {
 export const createTodo = async (data: Todo) => {
   await axiosInstance.post('todos', data);
 }
+
+export const updateTodo = async (data: Todo) => {
+  return (await axiosInstance.put<Todo>(`todos.${data.id}`, data));
+}
+
+export const deleteTodo = async (id: number) => {
+  await axiosInstance.delete<Todo>(`todos/${id}`);
+}
